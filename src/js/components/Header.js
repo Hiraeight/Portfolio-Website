@@ -5,7 +5,10 @@ const Header = () => {
     <header className='header'>
       <section>
         <div className='header-content'>
-          <h1>John Patrick Felicia</h1>
+          <h1>
+            Hey! I'm <br/>
+            John Patrick
+          </h1>
           <h3>
             Front-End Developer Specializing in Clean and<br/>
             Responsive Web Solutions.
