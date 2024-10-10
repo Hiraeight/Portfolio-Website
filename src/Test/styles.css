@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing between items */
+    gap: 10px; /* Optional: Adds space between the items */
+  }
+  
+  .item {
+    flex: 1 1 calc(50% - 10px); /* Each item will take 50% of the container width */
+    background-color: lightgray; /* Just to see the layout clearly */
+    padding: 20px; /* Optional: Padding for items */
+    box-sizing: border-box;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: row; /* Keep row direction */
+    }
+  
+    .item {
+      flex: 1 1 calc(50% - 10px); /* Each item will take 50% of the container width */
+    }
+  }
+  
