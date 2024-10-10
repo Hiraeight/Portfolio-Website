@@ -7,6 +7,10 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
   }
 
+  const handleClick = () => {
+    setMenuOpen(false);
+  }
+
   return (
     <nav className={`navbar ${menuOpen ? "open" : ""}`}>
       <a href='.header'>
@@ -23,19 +27,19 @@ const Nav = () => {
       {/* navigation items */}
       <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
         <li>
-          <a href='#skills'>Skills</a>
+          <a href='#skills' onClick={handleClick}>Skills</a>
         </li>
         <li>
-          <a href='/'>Projects</a>
+          <a href='#projects' onClick={handleClick}>Projects</a>
         </li>
         <li>
-          <a href='/'>About Me</a>
+          <a href='#about-me' onClick={handleClick}>About Me</a>
         </li>
         <li>
-          <a href='/'>Contact</a>
+          <a href='#Contact' onClick={handleClick}>Contact</a>
         </li>
         <li>
-          <a href='/'>Resume</a>
+          <a href='/' onClick={handleClick}>Resume</a>
         </li>
       </ul>
     </nav>

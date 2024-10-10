@@ -8,7 +8,7 @@ const Projects = () => {
           <h2>Projects</h2>
         </div>
         <div>
-
+          
         </div>
       </section>
     </div>
