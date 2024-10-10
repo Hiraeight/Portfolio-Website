@@ -40,7 +40,7 @@ const skills = [
     
     {
         id: 2,
-        category: "Frameworks",
+        category: <h3>{"Frameworks"}<br />{"/Libraries"}</h3>,
         image1: frame1,
         image2: frame2,
         image3: frame3,
