@@ -37,7 +37,7 @@ const skills = [
         image5: lang5,
         image6: lang6,
     },
-    
+
     {
         id: 2,
         category: <h3>{"Frameworks"}<br />{"/Libraries"}</h3>,
@@ -48,7 +48,7 @@ const skills = [
         image5: frame5,
         image6: frame6,
     },
-    
+
     {
         id: 3,
         category: "Tools",
@@ -59,7 +59,7 @@ const skills = [
         image5: tool5,
         image6: tool6,
     },
-    
+
     {
         id: 4,
         category: "Others",
