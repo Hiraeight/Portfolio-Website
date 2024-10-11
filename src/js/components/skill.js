@@ -26,7 +26,7 @@ import other4 from '../../images/skillset/others/zapier.jpeg';
 import other5 from '../../images/skillset/others/airtable.jpeg';
 import other6 from '../../images/skillset/others/jira.png';
 
-const skills = [
+const skill = [
     {
         id: 1,
         category: "Languages",
@@ -72,4 +72,4 @@ const skills = [
     },
 ]
 
-export default skills
+export default skill
