@@ -1,5 +1,5 @@
 import React from 'react'
-import skills from './Skills'
+import skills from './skills'
 
 const SkillSet = () => {
   return (
@@ -9,23 +9,23 @@ const SkillSet = () => {
           <h2>Skills</h2>
         </div>
 
-        <div className='skills-category'>
+        <article className='skills-category'>
           {
-            skills.map(skills => <div key={skills.id} className='skills-icon'>
+            skills.map(skills => <div key={skills.id} className='skills-card'>
               <div>
                 <h3>{skills.category}</h3>
               </div>
               <div className='skills-image'>
-                <img src={skills.image1} alt='' class="no-image" />
-                <img src={skills.image2} alt='' class="no-image" />
-                <img src={skills.image3} alt='' class="no-image" />
-                <img src={skills.image4} alt='' class="no-image" />
-                <img src={skills.image5} alt='' class="no-image" />
-                <img src={skills.image6} alt='' class="no-image" />
+                <img src={skills.image1} alt=''  />
+                <img src={skills.image2} alt=''  />
+                <img src={skills.image3} alt=''  />
+                <img src={skills.image4} alt=''  />
+                <img src={skills.image5} alt=''  />
+                <img src={skills.image6} alt=''  />
               </div>
             </div>)
           }
-        </div>
+        </article>
       </section>
     </div>
   )

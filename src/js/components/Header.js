@@ -20,8 +20,8 @@ const Header = () => {
           </p>
         </div>
         <div className='header-cta'>
-            <button>View my projects</button>
-            <button>Let's Collaborate</button>
+            <button className='header-button'>View my projects</button>
+            <button className='header-button'>Let's Collaborate</button>
           </div>
       </section>
     </header>
