@@ -1,5 +1,4 @@
 import React from 'react'
-import skills from './skills'
 
 const SkillSet = () => {
   return (
@@ -16,12 +15,6 @@ const SkillSet = () => {
                 <h3>{skills.category}</h3>
               </div>
               <div className='skills-image'>
-                <img src={skills.image1} alt=''  />
-                <img src={skills.image2} alt=''  />
-                <img src={skills.image3} alt=''  />
-                <img src={skills.image4} alt=''  />
-                <img src={skills.image5} alt=''  />
-                <img src={skills.image6} alt=''  />
               </div>
             </div>)
           }
