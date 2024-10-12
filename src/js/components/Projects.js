@@ -24,8 +24,8 @@ const Projects = () => {
                 <img src={projects.tools4} alt='' />
               </div>
               <div className='buttons-container'>
-                <a href={projects.wireframe} target='_blank'><button>Lo-Fi Design</button></a>
-                <a href={projects.prototype} target='_blank'><button>Hi-Fi Design</button></a>
+                <a href={projects.wireframe} target='_blank'><button>Wireframe</button></a>
+                <a href={projects.prototype} target='_blank'><button>Prototype</button></a>
                 <a href={projects.github} target='_blank'><button>Github</button></a>
                 <a href={projects.live} target='_blank'><button>Live Demo</button></a>
               </div>

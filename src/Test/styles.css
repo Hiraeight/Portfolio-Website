@@ -33,4 +33,29 @@
 h1, h2, p {
   margin-bottom: 20px;
 }
+.curved-background-section {
+  background-color: #f5e4d9; /* Replace with your desired background color */
+  padding: 4rem 2rem;
+  clip-path: ellipse(80% 70% at 50% 50%);
+}
+
+.profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-content img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-content h1 {
+  font-size: 2rem;
+  color: #8b4513; /* Replace with your desired text color */
+}
 
