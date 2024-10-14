@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import '../css/App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
@@ -9,6 +10,24 @@ import CatllToAction from './components/CatllToAction';
 import Footer from './components/Footer';
 
 function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsVisible(window.scrollY > 100); // Simplified visibility check
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
       <Nav />
@@ -19,6 +38,10 @@ function App() {
       <AboutMe />
       <CatllToAction />
       <Footer />
+
+      <div className={`scroll-button ${isVisible ? 'show' : ''}`} onClick={scrollToTop}>
+        ↑
+      </div>
     </>
   );
 }

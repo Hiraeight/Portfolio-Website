@@ -24,10 +24,10 @@ const Projects = () => {
                 <img src={projects.tools4} alt='' />
               </div>
               <div className='buttons-container'>
-                <a href={projects.wireframe} target='_blank'><button>Wireframe</button></a>
-                <a href={projects.prototype} target='_blank'><button>Prototype</button></a>
-                <a href={projects.github} target='_blank'><button>Github</button></a>
-                <a href={projects.live} target='_blank'><button>Live Demo</button></a>
+                <a href={projects.wireframe} rel="noreferrer" target='_blank'><button className='projects-button'>Wireframe</button></a>
+                <a href={projects.prototype} rel="noreferrer" target='_blank'><button className='projects-button'>Prototype</button></a>
+                <a href={projects.github} rel="noreferrer" target='_blank'><button className='projects-button'>Github</button></a>
+                <a href={projects.live} rel="noreferrer" target='_blank'><button className='projects-button'>Live Demo</button></a>
               </div>
             </div>)
           }

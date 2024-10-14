@@ -20,9 +20,9 @@ const Header = () => {
           </p>
         </div>
         <div className='header-cta'>
-            <button className='header-button'>View my projects</button>
-            <button className='header-button'>Let's Collaborate</button>
-          </div>
+          <a href='#projects'><button className='header-button'>View my projects</button></a>
+          <a href='#contact'><button className='header-button'>Let's Collaborate</button></a>
+        </div>
       </section>
     </header>
   )

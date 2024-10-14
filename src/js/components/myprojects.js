@@ -59,7 +59,7 @@ const projects = [
         wireframe: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=0-1&node-type=canvas&t=crgxdgWidpZTGw3q-0',
         prototype: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=81-2&node-type=canvas&t=qSYMe0U2tf2599Ng-0',
         github: 'https://github.com/Hiraeight/Little-Lemon',
-        live: 'https://pupeims.webflow.io/',
+        live: 'https://little-lemon-zeta-liard.vercel.app/',
     },
 ]
 

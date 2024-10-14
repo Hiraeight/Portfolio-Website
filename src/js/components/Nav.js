@@ -39,10 +39,10 @@ const Nav = () => {
           <a href='#about-me' onClick={handleClick}>About Me</a>
         </li>
         <li>
-          <a href='#Contact' onClick={handleClick}>Contact</a>
+          <a href='#contact' onClick={handleClick}>Contact</a>
         </li>
         <li>
-          <a href='/' onClick={handleClick}>Resume</a>
+          <a href='https://www.canva.com/design/DAGTkLGA8vs/jfuzsMyDPOGfmq52KQldHg/view?utm_content=DAGTkLGA8vs&utm_campaign=designshare&utm_medium=link&utm_source=editor' rel="noreferrer" target='_blank' onClick={handleClick}>Resume</a>
         </li>
       </ul>
     </nav>
