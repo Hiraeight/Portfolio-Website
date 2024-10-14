@@ -51,20 +51,25 @@ const CatllToAction = () => {
         <div className='cta-form'>
           <form ref={form} onSubmit={sendEmail}>
             <label>Name:</label>
-            <input type="text" name="user_name" required />
+            <input
+              type="text"
+              name="user_name"
+              placeholder='Name'
+            />
             <label>Email: *</label>
-            <input 
-              type="email" 
-              name="user_email" 
-              onChange={handleEmailChange} 
-              required 
+            <input
+              type="email"
+              name="user_email"
+              placeholder='Email'
+              onChange={handleEmailChange}
+              required
             />
             <label>Message:</label>
-            <textarea name="message" required />
-            <input 
-              type="submit" 
-              value="Send"  
-              onClick={handleSend} 
+            <textarea name="message" />
+            <input
+              type="submit"
+              value="Send"
+              onClick={handleSend}
               disabled={!emailValid} // Disable button if email is not valid
             />
           </form>
