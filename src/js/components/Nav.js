@@ -27,10 +27,13 @@ const Nav = () => {
       {/* navigation items */}
       <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
         <li>
-          <a href='#skills' onClick={handleClick}>Skills</a>
+          <a href='#certificates' onClick={handleClick}>Certificates</a>
         </li>
         <li>
           <a href='#projects' onClick={handleClick}>Projects</a>
+        </li>
+        <li>
+          <a href='#skills' onClick={handleClick}>Skills</a>
         </li>
         <li>
           <a href='#about-me' onClick={handleClick}>About Me</a>

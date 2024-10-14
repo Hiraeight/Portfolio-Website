@@ -17,7 +17,7 @@ const projects = [
     {
         id: 1,
         title: "My Portfolio",
-        description: "This personal website portfolio. I",
+        description: "This personal website portfolio. I created using the knowledge I gained from the Meta 'Facebook' Front-End Developer Specialization Course. ",
 
         tools1: firstproj1,
         tools2: firstproj2,
