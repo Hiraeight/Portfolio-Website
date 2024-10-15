@@ -1,9 +1,9 @@
 import React from 'react';
-import linkedin from '../../images/social logo/linkedin - b.png';
-import github from '../../images/social logo/github - b.png';
-import gmail from '../../images/social logo/gmail - b.png';
-import instagram from '../../images/social logo/instagram - b.png';
-import facebook from '../../images/social logo/facebook - b.png';
+import linkedin from '../../images/social logo/linkedin-w.png';
+import github from '../../images/social logo/github-w.png';
+import gmail from '../../images/social logo/gmail-w.png';
+import instagram from '../../images/social logo/instagram-w.png';
+import facebook from '../../images/social logo/facebook-w.png';
 
 const Footer = () => {
   return (

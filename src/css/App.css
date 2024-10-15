@@ -10,8 +10,8 @@
 :root {
   --white: #FFFFFF;
   --primary: #4E3629;
-  --background: #F5F5F5;
   --accent: #A67B5B;
+  --background: #F5F5F5;
   --secondary: #E0D7CE;
   --hovered: #8b4513;
 
@@ -643,7 +643,7 @@ input[type="submit"] {
   font-size: var(--fs-h3); /* Same font size as label */
 }
 
-/* Footer */
+/* Footer Section */
 .footer {
   display: flex;
   flex-direction: column;
@@ -655,7 +655,11 @@ input[type="submit"] {
   gap: 2rem;
   padding: 2rem;
 
-  background-color: var(--secondary);
+  background: linear-gradient(45deg, #4E3629, #A67B5B);
+}
+
+.footer h3 {
+  color: var(--white);
 }
 
 .social-icons {
