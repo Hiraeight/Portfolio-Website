@@ -24,6 +24,11 @@ const projects = [
         tools3: firstproj3,
         tools4: firstproj4,
 
+        alt1: 'React',
+        alt2: 'Javascript',
+        alt3: 'HTML5',
+        alt4: 'CSS3',
+
         wireframe: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=0-1&t=ZMS6X5KCuZF5TiW2-1',
         prototype: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=81-2&t=qSYMe0U2tf2599Ng-1',
         github: 'https://github.com/Hiraeight/Portfolio-Website',
@@ -40,10 +45,16 @@ const projects = [
         tools3: secondproj3,
         tools4: secondproj4,
 
-        wireframe: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=0-1&node-type=canvas&t=crgxdgWidpZTGw3q-0',
-        prototype: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=81-2&node-type=canvas&t=qSYMe0U2tf2599Ng-0',
-        github: 'https://github.com/Hiraeight/Portfolio-Website',
+        alt1: 'Webflow',
+        alt2: 'Memberstack',
+        alt3: 'Zapier',
+        alt4: 'Airtable',
+
+        wireframe: '',
+        prototype: '',
+        github: '',
         live: 'https://pupeims.webflow.io/',
+        underConstruction: true,
     },
 
     {
@@ -56,8 +67,13 @@ const projects = [
         tools3: thirdproj3,
         tools4: thirdproj4,
 
-        wireframe: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=0-1&node-type=canvas&t=crgxdgWidpZTGw3q-0',
-        prototype: 'https://www.figma.com/design/lCfVIBKySHjEWgvCpRUOoM/Portfolio?node-id=81-2&node-type=canvas&t=qSYMe0U2tf2599Ng-0',
+        alt1: 'React',
+        alt2: 'Javascript',
+        alt3: 'HTML5',
+        alt4: 'CSS3',
+
+        wireframe: 'https://www.figma.com/design/gTg00v2Te5cMmtB4yjU972/Wireframe?node-id=0-1&t=hHgnDWyr0K0AFvGP-1',
+        prototype: 'https://www.figma.com/design/HVtEZes8s8DiZlrJV5glOv/Prototype?t=hHgnDWyr0K0AFvGP-1',
         github: 'https://github.com/Hiraeight/Little-Lemon',
         live: 'https://little-lemon-zeta-liard.vercel.app/',
     },

@@ -12,11 +12,11 @@ const Footer = () => {
         <img src='' alt='' />
         <h3>Find me on the web:</h3>
         <div className='social-icons'>
-          <a href='https://www.linkedin.com/in/johnpatrickfelicia/' rel="noreferrer" target='_blank'><img src={linkedin} alt='' /></a>
-          <a href='https://github.com/Hiraeight' rel="noreferrer" target='_blank'><img src={github} alt='' /></a>
-          <a href="mailto:johnpatrickdfelicai@gmail.com" rel="noreferrer" target='_blank'><img src={gmail} alt='' /></a>
-          <a href='https://www.instagram.com/jp.felicia/' rel="noreferrer" target='_blank'><img src={instagram} alt='' /></a>
-          <a href='https://www.facebook.com/JohnPatrickFelicia' rel="noreferrer" target='_blank'><img src={facebook} alt='' /></a>
+          <a href='https://www.linkedin.com/in/johnpatrickfelicia/' rel="noreferrer" target='_blank'><img src={linkedin} alt='LinkedIn' /></a>
+          <a href='https://github.com/Hiraeight' rel="noreferrer" target='_blank'><img src={github} alt='GitHub' /></a>
+          <a href="mailto:johnpatrickdfelicai@gmail.com" rel="noreferrer" target='_blank'><img src={gmail} alt='Gmail' /></a>
+          <a href='https://www.instagram.com/jp.felicia/' rel="noreferrer" target='_blank'><img src={instagram} alt='Instagram' /></a>
+          <a href='https://www.facebook.com/JohnPatrickFelicia' rel="noreferrer" target='_blank'><img src={facebook} alt='Facebook' /></a>
         </div>
         <h3>This website was made by John Patrick Felicia © 2024</h3>
       </section>

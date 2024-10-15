@@ -21,7 +21,7 @@ const Certificates = () => {
     return (
         <div id='certificates'>
             <section className='certificates'>
-                <div className='cert-column1'>
+                <div className='text-container'>
                     <h2>Certificates</h2>
                     <p>
                         In a rapidly evolving field, staying ahead means embracing new challenges. 

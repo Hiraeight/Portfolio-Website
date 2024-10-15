@@ -154,6 +154,8 @@ nav ul li a:hover {
 
   padding: 2rem 4rem;
   height: 100%;
+
+  background-color: var(--background);
 }
 
 .header-content {
@@ -164,6 +166,14 @@ nav ul li a:hover {
 
   gap: var(--space-s);
   margin: var(--space-s);
+}
+
+.header-section {
+  background-color: transparent;
+}
+
+.header-cta {
+  background-color: transparent;
 }
 
 .header-cta {
@@ -197,6 +207,7 @@ nav ul li a:hover {
 /* Skillset */
 .skills {
   padding: 2rem;
+  background-color: var(--background);
 }
 
 .skills-header h2{
@@ -254,23 +265,26 @@ nav ul li a:hover {
 
 /* Certificates */
 .certificates {
-  height: 100vh;
-  padding: 4rem 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  height: 100vh;
+  padding: 4rem 4rem;
   gap: 2rem;
+
+  background-color: var(--background);
 }
 
-.cert-column1 {
+.text-container {
   max-width: 50%;
 }
 
-.cert-column1 h2 {
+.text-container h2 {
   font-weight: var(--fw-700);
 }
 
-.cert-column1 p {
+.text-container p {
   font-style: italic;
 }
 
@@ -448,7 +462,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 
   gap: 2rem;
   padding: 4rem 4rem;
@@ -651,6 +665,7 @@ input[type="submit"] {
 
   gap: 1rem;
 }
+
 .social-icons img {
   width: 3rem;
   height: 3rem;
@@ -660,6 +675,33 @@ input[type="submit"] {
 
 .social-icons a {
   background-color: transparent;
+}
+
+/* Under Construction */
+.under-construction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  color: #333;
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  z-index: 1;
 }
 
 @media screen and (max-width: 800px) {

@@ -36,6 +36,13 @@ const skill = [
         image4: lang4,
         image5: lang5,
         image6: lang6,
+
+        alt1: 'JavaScript',
+        alt2: 'HTML5',
+        alt3: 'CSS3',
+        alt4: '',
+        alt5: '',
+        alt6: '',
     },
 
     {
@@ -47,6 +54,13 @@ const skill = [
         image4: frame4,
         image5: frame5,
         image6: frame6,
+        
+        alt1: 'React',
+        alt2: 'React Native',
+        alt3: 'Bootstrap',
+        alt4: '',
+        alt5: '',
+        alt6: '',
     },
 
     {
@@ -58,6 +72,13 @@ const skill = [
         image4: tool4,
         image5: tool5,
         image6: tool6,
+        
+        alt1: 'Git',
+        alt2: 'GitHub',
+        alt3: 'Visual Studio',
+        alt4: 'npm',
+        alt5: 'Figma',
+        alt6: 'Webflow',
     },
 
     {
@@ -69,6 +90,13 @@ const skill = [
         image4: other4,
         image5: other5,
         image6: other6,
+        
+        alt1: 'ClickUp',
+        alt2: 'Slack',
+        alt3: 'MemberStack',
+        alt4: 'Zapier',
+        alt5: 'AirTable',
+        alt6: 'Jira',
     },
 ]
 

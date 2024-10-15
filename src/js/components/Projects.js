@@ -2,6 +2,17 @@ import React from 'react'
 import projects from './myprojects'
 
 const Projects = () => {
+  const handleButtonClick = (project, type) => {
+    if (project.underConstruction) {
+      alert('This page is currently under construction.');
+    } else {
+      const url = project[type];
+      if (url) {
+        window.open(url, '_blank'); // Open link in a new tab
+      }
+    }
+  };
+
   return (
     <div id='projects'>
       <section className='projects-top'>
@@ -10,27 +21,51 @@ const Projects = () => {
         </div>
       </section>
       <section className='projects-bottom'>
-        <article className='projects-category'>
-          {
-            projects.map(projects => <div key={projects.id} className='projects-card'>
-              <div className='projects-info'>
-                <h3>{projects.title}</h3>
-                <p>{projects.description}</p>
+      <article className="projects-category">
+          {projects.map((project) => (
+            <div key={project.id} className="projects-card">
+              <div className="projects-info">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
               </div>
-              <div className='projects-image'>
-                <img src={projects.tools1} alt='' />
-                <img src={projects.tools2} alt='' />
-                <img src={projects.tools3} alt='' />
-                <img src={projects.tools4} alt='' />
+              <div className="projects-image">
+                <img src={project.tools1} alt={project.alt1} />
+                <img src={project.tools2} alt={project.alt2} />
+                <img src={project.tools3} alt={project.alt3} />
+                <img src={project.tools4} alt={project.alt4} />
               </div>
-              <div className='buttons-container'>
-                <a href={projects.wireframe} rel="noreferrer" target='_blank'><button className='projects-button'>Wireframe</button></a>
-                <a href={projects.prototype} rel="noreferrer" target='_blank'><button className='projects-button'>Prototype</button></a>
-                <a href={projects.github} rel="noreferrer" target='_blank'><button className='projects-button'>Github</button></a>
-                <a href={projects.live} rel="noreferrer" target='_blank'><button className='projects-button'>Live Demo</button></a>
+              <div className="buttons-container">
+                {/* Wireframe Button */}
+                <button
+                  className="projects-button"
+                  onClick={() => handleButtonClick(project, 'wireframe')}
+                >
+                  Wireframe
+                </button>
+
+                {/* Prototype Button */}
+                <button
+                  className="projects-button"
+                  onClick={() => handleButtonClick(project, 'prototype')}
+                >
+                  Prototype
+                </button>
+
+                {/* GitHub Button */}
+                <button
+                  className="projects-button"
+                  onClick={() => handleButtonClick(project, 'github')}
+                >
+                  GitHub
+                </button>
+
+                {/* Live Demo Button */}
+                <a href={project.live} rel="noreferrer" target="_blank">
+                  <button className="projects-button">Live Demo</button>
+                </a>
               </div>
-            </div>)
-          }
+            </div>
+          ))}
         </article>
       </section>
     </div>
