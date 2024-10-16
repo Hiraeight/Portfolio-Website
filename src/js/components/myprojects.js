@@ -17,7 +17,7 @@ const projects = [
     {
         id: 1,
         title: "My Portfolio",
-        description: "This personal website portfolio. I created using the knowledge I gained from the Meta 'Facebook' Front-End Developer Specialization Course. ",
+        description: "I created this personal portfolio website using the knowledge I gained from the Meta (Facebook) Front-End Developer Specialization Course. It showcases my personal achievements and projects, bringing together my journey as a developer. ",
 
         tools1: firstproj1,
         tools2: firstproj2,
@@ -38,7 +38,7 @@ const projects = [
     {
         id: 2,
         title: "PUP-EIMS",
-        description: "This is a project that I created back in 2021. I built an online course provider called PUP EIMS (Polytechnic University of the Philippines - Educational Instructional Module System) aimed at empowering both students and faculty members.",
+        description: "This is a project that I created back in 2021 for my capstone project. I built an online course provider called PUP EIMS (Polytechnic University of the Philippines - Educational Instructional Module System) aimed at empowering both students and faculty members.",
 
         tools1: secondproj1,
         tools2: secondproj2,

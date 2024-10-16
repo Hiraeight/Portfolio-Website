@@ -18,11 +18,11 @@ const AboutMe = () => {
           <h3>Front-End Developer Specializing in Clean and Responsive Web Solutions.</h3>
         </div>
         <div className='right-column'>
-          <p>“I help agencies and startups build user-focused, scalable,
-          and responsive websites using modern front-end technologies.” 
-          I’m always open to new opportunities, whether you're an agency 
-          looking for a front-end developer or a startup in need of a 
-          responsive website.</p>
+          <p>A passionate aspiring Front-End Developer with a strong foundation in HTML, CSS, JavaScript, and React JS. I recently earned a professional certificate in Front-End Development from Meta (Facebook), where I gained valuable skills and insights into modern web development practices.
+<br/><br/>
+I thrive on continuous learning and love tackling new challenges. My portfolio features a collection of personal projects that showcase my creativity and technical abilities. I believe in the importance of user-centered design and aim to create engaging, accessible web experiences.
+<br/><br/>
+When I’m not coding, you can find me exploring new technologies or taking online courses. I’m excited to connect, learn, and grow in the ever-evolving world of web development!</p>
         </div>
       </section>
       <div class="custom-shape-divider-top-1728719494">

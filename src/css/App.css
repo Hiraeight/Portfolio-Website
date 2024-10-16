@@ -15,7 +15,7 @@
   --secondary: #E0D7CE;
   --hovered: #8b4513;
 
-  --fs-h1: 4rem;
+  --fs-h1: 5rem;
   --fs-h2: 3rem;
   --fs-h3: 1.5rem;
   --fs-p: 1.2rem;
@@ -31,7 +31,6 @@
   --space-m: 2rem;
   --space-l: 2.5rem;
   --space-xl: 3rem;
-
 }
 
 body {
@@ -168,6 +167,10 @@ nav ul li a:hover {
   margin: var(--space-s);
 }
 
+.header-content h1 {
+  font-size: var(--fs-h1);
+}
+
 .header-section {
   background-color: transparent;
 }
@@ -263,14 +266,14 @@ nav ul li a:hover {
   height: 40px;
 }
 
-/* Certificates */
+/* Certificates section */
 .certificates {
   display: flex;
   align-items: center;
   justify-content: center;
 
   height: 100vh;
-  padding: 4rem 4rem;
+  padding: 4rem;
   gap: 2rem;
 
   background-color: var(--background);
@@ -884,6 +887,16 @@ h1 {
 
   .header-cta {
     flex-direction: column;
+  }
+
+  /* Certificates */
+  .certificates {
+    padding: 2rem;
+    gap: .5rem;
+  }
+
+  .text-container {
+    max-width: 100%;
   }
 
   /* Skills */
