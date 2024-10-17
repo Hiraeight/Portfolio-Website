@@ -65,7 +65,8 @@ const CatllToAction = () => {
               required
             />
             <label>Message:</label>
-            <textarea name="message" />
+            <textarea name="message" 
+              placeholder='message...'/>
             <input
               type="submit"
               value="Send"
