@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import lightmode from '../../images/mode/sun - w.png';
-import darkmode from '../../images/mode/9035048_moon_icon.png';
+import lightmode from '../../images/mode/light_mode.png';
+import darkmode from '../../images/mode/dark_mode.png';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
