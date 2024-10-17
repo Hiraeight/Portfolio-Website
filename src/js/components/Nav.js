@@ -21,6 +21,11 @@ const Nav = () => {
 
   return (
     <nav className={`navbar ${menuOpen ? "open" : ""}`}>
+      {/* Dark Mode Toggle Button */}
+      <button onClick={toggleDarkMode} className="dark-mode-toggle-tab">
+        < img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
+      </button>
+
       <a href='.header'>
         <img src='' alt='logo' />
       </a>
