@@ -1,29 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import lightmode from '../../images/mode/light_mode.png';
 import darkmode from '../../images/mode/dark_mode.png';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false); // State for dark mode
+
+  // Initialize dark mode state based on system preference or saved preference
+  const [darkMode, setDarkMode] = useState(() => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode !== null ? JSON.parse(savedMode) : prefersDark;
+  });
+
+  // Automatically apply the dark mode class on initial render
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  }
+  };
 
   const handleClick = () => {
     setMenuOpen(false);
-  }
+  };
 
+  // Toggle dark mode and save preference
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode', !darkMode); // Toggle dark mode class
-  }
+    setDarkMode(prevMode => {
+      const newMode = !prevMode;
+      document.body.classList.toggle('dark-mode', newMode);
+      localStorage.setItem("darkMode", JSON.stringify(newMode));
+      return newMode;
+    });
+  };
 
   return (
     <nav className={`navbar ${menuOpen ? "open" : ""}`}>
       {/* Dark Mode Toggle Button */}
       <button onClick={toggleDarkMode} className="dark-mode-toggle-tab">
-        < img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
+        <img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
       </button>
 
       <a href='.header'>
@@ -60,13 +80,12 @@ const Nav = () => {
         <li>
           {/* Dark Mode Toggle Button */}
           <button onClick={toggleDarkMode} className="dark-mode-toggle">
-            < img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
+            <img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
           </button>
         </li>
       </ul>
-
     </nav>
-  )
+  );
 }
 
 export default Nav;

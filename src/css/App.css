@@ -535,6 +535,7 @@ img[src=""] {
 }
 
 .custom-shape-divider-bottom-1728718769 svg {
+  top: -1px;
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -566,7 +567,7 @@ img[src=""] {
   fill: var(--accent);
 }
 
-/* CTA */
+/* Contact section */
 .cta {
   display: flex;
   align-items: center;
@@ -753,6 +754,7 @@ h1 {
     --fs-h3: 1.2rem;
     --fs-p: 1rem;
   }
+  
   /* Navigation */
   .menu-icon {
     display: block;
