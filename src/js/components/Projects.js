@@ -34,6 +34,9 @@ const Projects = () => {
                 <img src={project.tools3} alt={project.alt3} />
                 <img src={project.tools4} alt={project.alt4} />
               </div>
+              <div className='more-info'>
+                <p>hover for more info</p>
+              </div>
               <div className="buttons-container">
                 {/* Wireframe Button */}
                 <button

@@ -18,7 +18,7 @@ const AboutMe = () => {
           <h3>Front-End Developer Specializing in Clean and Responsive Web Solutions.</h3>
         </div>
         <div className='right-column'>
-          <p>A passionate aspiring Front-End Developer with a strong foundation in HTML, CSS, JavaScript, and React JS. I recently earned a professional certificate in Front-End Development from Meta (Facebook), where I gained valuable skills and insights into modern web development practices.
+          <p>A Front-End Developer with a strong foundation in HTML, CSS, JavaScript, and React JS. I recently earned a professional certificate in Front-End Development from Meta (Facebook), where I gained valuable skills and insights into modern web development practices.
 <br/><br/>
 I thrive on continuous learning and love tackling new challenges. My portfolio features a collection of personal projects that showcase my creativity and technical abilities. I believe in the importance of user-centered design and aim to create engaging, accessible web experiences.
 <br/><br/>

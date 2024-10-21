@@ -37,8 +37,8 @@ const projects = [
 
     {
         id: 2,
-        title: "PUP-EIMS",
-        description: "This is a project that I created back in 2021 for my capstone project. I built an online course provider called PUP EIMS (Polytechnic University of the Philippines - Educational Instructional Module System) aimed at empowering both students and faculty members.",
+        title: "Educational Instructional Module System",
+        description: "I built an online course provider called PUP EIMS (Polytechnic University of the Philippines - Educational Instructional Module System) aimed at empowering both students and faculty members for my college capstone project.",
 
         tools1: secondproj1,
         tools2: secondproj2,
@@ -59,7 +59,7 @@ const projects = [
 
     {
         id: 3,
-        title: "Little Lemon",
+        title: "Little Lemon Reservation App",
         description: "This project is created using HTML, CSS and JavaScript React. A website for little lemon with functional customer reservation. This is the final project prepared by Meta “Facebook” to earn their Front-End Developer Professional Certificate.",
 
         tools1: thirdproj1,

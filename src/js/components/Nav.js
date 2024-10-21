@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import lightmode from '../../images/mode/light_mode.png';
 import darkmode from '../../images/mode/dark_mode.png';
+import wlogo from '../../images/logo/white_logo_gif.gif';
+import blogo from '../../images/logo/dark_logo_gif.gif';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -47,7 +49,7 @@ const Nav = () => {
       </button>
 
       <a href='.header'>
-        <img src='' alt='logo' />
+      <img src={darkMode ? wlogo : blogo} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}  className='header-logo' />
       </a>
 
       {/* Mobile navigation view */}
