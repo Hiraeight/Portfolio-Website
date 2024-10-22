@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import lightmode from '../../images/mode/light_mode.png';
-import darkmode from '../../images/mode/dark_mode.png';
-import wlogo from '../../images/logo/white_logo_gif.gif';
+import wlogo from '../../images/logo/white_logo.gif';
 import blogo from '../../images/logo/dark_logo_gif.gif';
+import DarkModeToggle from './DarkModeToggle';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +13,8 @@ const Nav = () => {
     return savedMode !== null ? JSON.parse(savedMode) : prefersDark;
   });
 
-  // Automatically apply the dark mode class on initial render
-  useEffect(() => {
+   // Automatically apply the dark mode class on initial render
+   useEffect(() => {
     if (darkMode) {
       document.body.classList.add('dark-mode');
     } else {
@@ -43,24 +42,23 @@ const Nav = () => {
 
   return (
     <nav className={`navbar ${menuOpen ? "open" : ""}`}>
-      {/* Dark Mode Toggle Button */}
-      <button onClick={toggleDarkMode} className="dark-mode-toggle-tab">
-        <img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
+      {/* Pass darkMode and toggleDarkMode to DarkModeToggle */}
+      <button className="dark-mode-toggle-tab">
+        <DarkModeToggle checked={darkMode} onChange={toggleDarkMode} />
       </button>
 
-      <a href='.header'>
-      <img src={darkMode ? wlogo : blogo} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}  className='header-logo' />
-      </a>
+      {/* Logo switch based on dark mode */}
+      <img src={darkMode ? wlogo : blogo} alt={darkMode ? "White Logo" : "Dark Logo"} className='header-logo' />
 
       {/* Mobile navigation view */}
       <div className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
-        <div className={`bar ${menuOpen ? "bar1" : ""}`}></div>
-        <div className={`bar ${menuOpen ? "bar2" : ""}`}></div>
-        <div className={`bar ${menuOpen ? "bar3" : ""}`}></div>
+        <div className={`bar ${menuOpen ? 'bar1' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'bar2' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'bar3' : ''}`}></div>
       </div>
 
       {/* Navigation items */}
-      <ul className={`nav-links ${menuOpen ? "visible" : ""}`}>
+      <ul className={`nav-links ${menuOpen ? 'visible' : ''}`}>
         <li>
           <a href='#certificates' onClick={handleClick}>Certificates</a>
         </li>
@@ -81,13 +79,13 @@ const Nav = () => {
         </li>
         <li>
           {/* Dark Mode Toggle Button */}
-          <button onClick={toggleDarkMode} className="dark-mode-toggle">
-            <img src={darkMode ? lightmode : darkmode} alt={darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"} />
+          <button className="dark-mode-toggle">
+            <DarkModeToggle checked={darkMode} onChange={toggleDarkMode} />
           </button>
         </li>
       </ul>
     </nav>
   );
-}
+};
 
 export default Nav;

@@ -50,9 +50,9 @@ const projects = [
         alt3: 'Zapier',
         alt4: 'Airtable',
 
-        wireframe: '',
-        prototype: '',
-        github: '',
+        wireframe: 'https://www.figma.com/design/LQt2cJ1eIPvLE8e1g1MAUn/PUP-EIMS?node-id=0-1&t=ocdQiIIpdhU8UUBc-1',
+        prototype: 'https://www.figma.com/design/LQt2cJ1eIPvLE8e1g1MAUn/PUP-EIMS?node-id=41-2&t=4zlc1XCrUd6Ktuw5-1',
+        github: 'https://preview.webflow.com/preview/pupeims?utm_medium=preview_link&utm_source=dashboard&utm_content=pupeims&preview=e6fc6117f8e7001abd0718eb6916d08a&workflow=preview',
         live: 'https://pupeims.webflow.io/',
         underConstruction: true,
     },

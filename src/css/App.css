@@ -4,6 +4,7 @@
   margin: 0;
   color: var(--primary);
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -16,11 +17,11 @@
   --hovered: #8b4513;
 
   /* Dark mode colors */
-  --dark-primary: #D7CCC8;
+  --dark-primary: #ffffff;
   --dark-accent: #A67B5B;
   --dark-background: #1C1C1C;
   --dark-secondary: #2E2E2E;
-  --dark-neutral: #F4EDE4;
+  --dark-neutral: #ffffff;
 
   --fs-h1: 5rem;
   --fs-h2: 3rem;
@@ -414,6 +415,13 @@ img[src=""] {
 
 .more-info {
   text-decoration: underline;
+}
+
+.projects-button:disabled {
+  background-color: grey; /* Change background color */
+  color: white;           /* Change text color */
+  cursor: not-allowed;    /* Change cursor to indicate it's not clickable */
+  opacity: 0.6;           /* Make the button appear faded */
 }
 
 .projects-info {
@@ -834,7 +842,7 @@ h1 {
     display: none;
   }
 
-  .dark-mode-togglet-tab {
+  .dark-mode-toggle-tab {
     display: block;
   }
 
@@ -915,7 +923,7 @@ h1 {
 
   /* Header */
   .header {
-    padding: 2rem .5rem;
+    padding: 3rem .5rem;
   }
 
   .header-cta {
@@ -1023,9 +1031,7 @@ body.dark-mode {
 .dark-mode .skills,
 .dark-mode .certificates,
 .dark-mode .projects-bottom,
-.dark-mode .projects-card,
-.dark-mode .dark-mode-toggle,
-.dark-mode .dark-mode-toggle-tab {
+.dark-mode .projects-card {
   background-color: var(--dark-background);
 }
 
@@ -1050,8 +1056,6 @@ body.dark-mode {
 .dark-mode .skills-card,
 .dark-mode .about-me,
 .dark-mode .footer,
-.dark-mode .dark-mode-toggle:hover,
-.dark-mode .dark-mode-toggle-tab:hover,
 .dark-mode .custom-shape-divider-bottom-1728718769 .shape-fill,
 .dark-mode .custom-shape-divider-top-1728719494 .shape-fill {
   background:none;
@@ -1069,44 +1073,12 @@ body.dark-mode {
 }
 
 .dark-mode-toggle {
-  padding: 0.5rem .7rem;
-  background-color: var(--background);
-  color: var(--white);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: var(--fs-p);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.dark-mode-toggle img {
-  height: 2rem;
-  width: 2rem;
   background-color: transparent;
+  border: none;
 }
 
 .dark-mode-toggle-tab {
-  padding: 0.5rem .7rem;
-  background-color: var(--background);
-  color: var(--white);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: var(--fs-p);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.dark-mode-toggle-tab img {
-  height: 2rem;
-  width: 2rem;
   background-color: transparent;
-}
-
-.dark-mode-toggle:hover {
-  background-color: var(--secondary );
-}
-
-.dark-mode-toggle-tab:hover {
-  background-color: var(--secondary);
+  border: none;
 }
 

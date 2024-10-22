@@ -2,16 +2,6 @@ import React from 'react'
 import projects from './myprojects'
 
 const Projects = () => {
-  const handleButtonClick = (project, type) => {
-    if (project.underConstruction) {
-      alert('This page is currently under construction.');
-    } else {
-      const url = project[type];
-      if (url) {
-        window.open(url, '_blank'); // Open link in a new tab
-      }
-    }
-  };
 
   return (
     <div id='projects'>
@@ -39,32 +29,28 @@ const Projects = () => {
               </div>
               <div className="buttons-container">
                 {/* Wireframe Button */}
-                <button
-                  className="projects-button"
-                  onClick={() => handleButtonClick(project, 'wireframe')}
-                >
-                  Wireframe
-                </button>
+                <a href={project.wireframe} rel="noreferrer" target="_blank">
+                  <button className="projects-button">Wireframe</button>
+                </a>
 
                 {/* Prototype Button */}
-                <button
-                  className="projects-button"
-                  onClick={() => handleButtonClick(project, 'prototype')}
-                >
-                  Prototype
-                </button>
+                <a href={project.prototype} rel="noreferrer" target="_blank">
+                  <button className="projects-button">Prototype</button>
+                </a>
 
                 {/* GitHub Button */}
-                <button
-                  className="projects-button"
-                  onClick={() => handleButtonClick(project, 'github')}
-                >
-                  GitHub
-                </button>
+                <a href={project.github} rel="noreferrer" target="_blank">
+                  <button className="projects-button">Source Code</button>
+                </a>
 
                 {/* Live Demo Button */}
                 <a href={project.live} rel="noreferrer" target="_blank">
-                  <button className="projects-button">Live Demo</button>
+                  <button
+                    className="projects-button"
+                    disabled={project.title === "My Portfolio"} // Disable button if project title is "My Portfolio"
+                  >
+                    Live Demo
+                  </button>
                 </a>
               </div>
             </div>

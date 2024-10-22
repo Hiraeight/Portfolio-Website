@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logo/dark_logo_gif.gif';
+import logo from '../../images/logo/white_logo.gif';
 import linkedin from '../../images/social logo/linkedin-w.png';
 import github from '../../images/social logo/github-w.png';
 import gmail from '../../images/social logo/gmail-w.png';
@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div>
       <section className='footer'>
-        <img src={logo} alt='' className='footer-logo' />
+        <img src={logo} alt='logo' className='footer-logo' />
         <h3>Find me on the web:</h3>
         <div className='social-icons'>
           <a href='https://www.linkedin.com/in/johnpatrickfelicia/' rel="noreferrer" target='_blank'><img src={linkedin} alt='LinkedIn' /></a>
